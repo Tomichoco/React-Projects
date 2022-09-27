@@ -11,27 +11,23 @@ var greeting = "";
 var time = new Date();
 var currentTime = time.getHours();
 var greetingStyle = {
-    color: ""
+    color: "#fff"
 
 }
 if ( currentTime < 6 ) {
     greeting = "why are you up?🙂"
-    greetingStyle.color="brown";
 } else if (currentTime < 12 ) {
     greeting = "Good morning!🌤";
-    greetingStyle.color="yellow";
 }else if ( currentTime < 18 ){
     greeting = "Good afternoon🌞";
     greetingStyle.color="blue";
 } else {
     greeting = "Good night.🌥";
-    greetingStyle.color="green";
 }
 
-return <h1 className="" style={greetingStyle}>Tomi, {greeting}</h1>
+return <h1 className="heading1" style={greetingStyle}>Tomi, {greeting}</h1>
 
 }
-
 
 
 

@@ -5,8 +5,8 @@ function Footer() {
     var currentYear = time.getFullYear()
     return (
         <div>
-            <footer>
-                <p>All Rights Reserved, Tomi Affar ©{currentYear}</p>
+            <footer className="footer">
+                <p>All Rights Reserved, Tomi Affar © {currentYear}</p>
             </footer>
         </div>
 

@@ -1,0 +1,30 @@
+.heading1 {
+margin-bottom: 2%;
+font-family:'Times New Roman', Times, serif;
+}
+
+.heading2 {
+    color: rgb(142, 197, 214);
+    font-style: oblique;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    text-shadow: 1px 1px rgb(230, 243, 245);
+
+}
+
+.box-div {
+    height: 450px;
+    width: 330px;
+    padding: 2% 1% 0 2%;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0.3%;
+    left: 40%;
+    color: rgb(244, 248, 248);
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 15px;
+}
