@@ -4,7 +4,7 @@ import React from "react";
 //Create a variable to get Time of day
 //Set conditions to display greeting of the day
 
-function Heading1() {
+function Heading1(props) {
 
 
 var greeting = "";
@@ -15,12 +15,14 @@ var greetingStyle = {
 
 }
 if ( currentTime < 6 ) {
-    greeting = "why are you up?🙂"
+    greeting = "why are you up?🙂";
+    greetingStyle.color="#657d81";
 } else if (currentTime < 12 ) {
     greeting = "Good morning!🌤";
-}else if ( currentTime < 18 ){
+    greetingStyle.color="#f4f8f8";
+} else if ( currentTime < 18 ){
     greeting = "Good afternoon🌞";
-    greetingStyle.color="blue";
+    greetingStyle.color="#167686";
 } else {
     greeting = "Good night.🌥";
 }

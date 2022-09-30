@@ -7,18 +7,17 @@ function Form(props) {
         <div>
             <form className="list-form">
             <Input 
-            type="text" 
-            name="item" 
-            placeholder="Enter an item"
+            type="search"  
+            placeholder="Search"
 
             />
             <Button 
             type="submit" 
-            name="Add"
+            name="Search"
             />
             </form>
         </div>
-    )
+    );
 }
 
 
