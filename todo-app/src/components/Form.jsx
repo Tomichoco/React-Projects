@@ -7,6 +7,7 @@ function Form(props) {
         <div>
             <form className="list-form">
             <Input 
+            className="text-area"
             type="text" 
             name="item" 
             placeholder="Enter an item"

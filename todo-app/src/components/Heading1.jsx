@@ -7,7 +7,7 @@ import React from "react";
 function Heading1(props) {
 
 
-var greeting = "";
+var greeting = "Hello there!";
 var time = new Date();
 var currentTime = time.getHours();
 var greetingStyle = {
@@ -25,9 +25,10 @@ if ( currentTime < 6 ) {
     greetingStyle.color="#167686";
 } else {
     greeting = "Good night.🌥";
+    greetingStyle.color="#657d81";
 }
 
-return <h1 className="heading1" style={greetingStyle}>Tomi, {greeting}</h1>
+return <h1 className="heading1" style={greetingStyle}>{props.name} {greeting}</h1>
 
 }
 

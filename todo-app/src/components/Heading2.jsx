@@ -1,9 +1,9 @@
 import React from "react";
 
-function Heading2() {
+function Heading2(props) {
     return (
         <div>
-            <h2 className="heading2">My Todo List</h2>
+            <h2 className="heading2">{props.text}</h2>
         </div>
     )
 }

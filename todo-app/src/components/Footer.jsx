@@ -1,12 +1,10 @@
 import React from "react";
 
-function Footer() {
-    var time = new Date();
-    var currentYear = time.getFullYear()
+function Footer(props) {
     return (
         <div>
             <footer className="footer">
-                <p>All Rights Reserved, Tomi Affar © {currentYear}</p>
+                <p className="footer-para">All Rights Reserved, Tomi Affar © {props.year}</p>
             </footer>
         </div>
 
