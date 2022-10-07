@@ -7,7 +7,7 @@ import App from "./components/App.jsx";
 //Create a root; const root = ReactDOM.createRoot(container)
 //Render App to root; root.render(<App />)
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App isLoggedIn={false} />);
+ReactDOM.createRoot(document.getElementById("root")).render(<App isLoggedIn={true} />);
 
 
 

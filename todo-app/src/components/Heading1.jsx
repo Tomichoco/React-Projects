@@ -28,7 +28,7 @@ if ( currentTime < 6 ) {
     greetingStyle.color="#657d81";
 }
 
-return <h1 className="heading1" style={greetingStyle}>{props.name} {greeting}</h1>
+return <h1 className="heading1" style={greetingStyle}>{greeting}</h1>
 
 }
 
