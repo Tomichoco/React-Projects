@@ -1,19 +1,20 @@
 import React from "react";
-import data from "./data";
+import {data} from "./data";
+import FilterButtons from "./Filter-Button"
 import Card from "./Cards";
 
 export default function Services(props) {
-    const details = data.map(item => 
-    <Card 
-    key={item.id} 
-    img={item.imgURL}
-    description={item.title}
-    price={item.price}
-    location={item.location}
-    phone={item.phone}
-    email={item.email}
 
-    />)
+    
 
-    return <div>{details}</div>
+    return (
+        <div className="service-div">
+            <FilterButtons />
+            {
+                data.map(data => (
+                    <Card key={data.id} item={data} />
+                ))
+            }
+        </div>
+    )
 }

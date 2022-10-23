@@ -9,7 +9,7 @@ function Home() {
                 <div className="sub-div">
                     <h1 className="home-header"> The <span className="header-span">Design-Haus</span></h1>
                     <p className="text">Modern Homes with Exquisite Architectural Designs Made <span className="para-span">For You</span></p>
-                    <div className="col">
+                    <div className="home-icons">
                         <div className="icon globe-icon">
                             <FontAwesomeIcon icon={solid('globe')} />
                         </div>

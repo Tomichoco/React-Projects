@@ -1,5 +1,5 @@
 import React from "react";
-import List from "./component/Multipage/List";
+import Links from "./component/Link";
 
 function Navbar() {
     return (
@@ -8,7 +8,7 @@ function Navbar() {
                 <nav className="navbar navbar-expand-lg">
                     <a className="navbar-brand" href="www.tomiaffar.com">Design-Haus</a>
                     <ul className="navbar-nav">
-                        <List />
+                        <Links />
                     </ul>
                 </nav>
             </div>

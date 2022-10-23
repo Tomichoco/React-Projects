@@ -7,14 +7,14 @@ import Footer from "./Footer.jsx";
 
 
 function Todo() {
-    var list = [];
+
 
     const [item, setItem] = useState("");
     const [listValue, setListValue] = useState(" ");
 
     function handleChange(event) {
         const itemValue = event.target.value;
-        setItem(() => list.push(itemValue) )
+        setItem(item)
     }
 
     function handleClick() {
