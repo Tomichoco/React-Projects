@@ -44,8 +44,6 @@ export default function Register(props) {
                 <input className="login-input" onChange={handleChange} type="text" value={fullName.fName} name="fName" required/><br/>
                  <label className="login-label" for="lastname">Lastname:</label><br/>
                 <input className="login-input" onChange={handleChange} type="text" value={fullName.lName} name="lName" required/><br/>
-                <label className="login-label" for="password">Password:</label><br/>
-                 <input className="login-input" type="email" value="" name="email" required/><br/>
                  <label className="login-label" for="password">Password:</label><br/>
                  <input className="login-input" type="password" value="" name="password"/><br/>
                 <button 

@@ -12,7 +12,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(12, 11, 9, 0.8);
+    background-color: rgba(24, 24, 23, 0.8);
     z-index: -1;
 }
 
@@ -21,7 +21,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin-top:20px;
-    background-image: url("bg-image/bg4-img.jpg");
+    background-image: url("bg-image/bg5-img.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +39,6 @@ body {
     
 }
 .link {
-    color: rgb(4, 0, 15);
     margin-right: 30%;
     text-decoration: none;
     outline: none;
@@ -50,16 +49,16 @@ body {
 
 .sub-div {
     background-color: transparent;
-    width: 910px;
-    height: 450px;
+    width: 880px;
+    height: 400px;
     position: absolute;
     top: 20%;
     left: 18.5%;
     right: 12%;
-    border-radius: 0px;
+    border-radius: 5px;
     padding: 40px 70px 0px 70px;
     z-index: 2;
-    box-shadow: 0 0 30px rgb(145, 122, 98);
+    box-shadow: 0 0 30px rgb(71, 74, 82);
 
 
 }
@@ -91,11 +90,31 @@ body {
 }
 
 .icon {
-    margin: 30px  5px 5px;
-    background-color: rgb(20, 10, 0);
+    margin: 65px  5px 5px;
     background-image: var(--bs-gradient);
-    width:150px;
-    height: 150px;
+    border-radius: 50%;
+}
+
+.globe-icon {
+    background-color: rgb(41, 42, 43);
+    width:60px;
+    height: 60px;
+    padding: 20px;
+
+}
+
+.envelope-icon {
+    background-color: rgb(71, 62, 2);
+    width:40px;
+    height: 40px;
+    padding: 11px;
+}
+
+.twitter-icon {
+    background-color: rgb(233, 225, 183);
+    width:25px;
+    height: 25px;
+    padding: 7px;
 }
 
 /* SERVICE STYLING */
@@ -175,15 +194,17 @@ body {
 
 /* CARD STYLING */
 .card--div {
-    margin: 50px 10px 10px 10px;
+    margin: 50px 5px 10px 5px;
     display: inline-flex;
     position: relative;
 }
+
 .badgeText {
     background-color: #fff;
     color: pink;
     font-size: 1rem;
     position: absolute;
+    /* top: 30px; */
     right: 10px;
     z-index: 1;
 
@@ -236,7 +257,8 @@ section .carousel-control-next {
     font-size: 1.5rem;
 }
 .login-form {
-    background-color: brown;
+    background-color: transparent;
+    background-image: var(--bs-gradient);
     width: 380px;
     height: 500px;
     padding: 20px 5px 5px 10px; 
@@ -268,7 +290,8 @@ section .carousel-control-next {
 
 /* SIGNUP PAGE */
 .login--form {
-    background-color: brown;
+    background-color: transparent;
+    background-image: var(--bs-gradient);
     width: 380px;
     height: 500px;
     padding: 20px 5px 5px 10px; 

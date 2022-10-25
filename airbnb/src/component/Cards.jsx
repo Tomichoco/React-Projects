@@ -8,21 +8,14 @@ export default function Card (props) {
     const [pop, setPop] = useState(false);
     function handleClick(event) {
         setPop(true)
-        const clickCount = event.detail;
-        if (clickCount > 1) {
-            setPop(false)
-        }
-
-        console.log(event);
     }
     return (
         <div className="card--div">
-                <div>
+                <div className="badge">
                     {
 
                         props.item.soldOut ? <span className="badgeText">Soldout</span> : 
                         <FontAwesomeIcon onClick={handleClick}className="heart-icon" style={{color: pop ? "red" : "pink"}} icon={regular('heart')} />
-                    
                     }
                         
                 </div>

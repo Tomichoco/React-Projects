@@ -8,7 +8,7 @@ export default function Login() {
             <label className="login-label" for="Firstname">Firstname:</label><br/>
             <input className="login-input" type="text" /><br/>
             <label className="login-label" for="Password">Password:</label><br/>
-            <input className="login-input" type="text" name="fname" value="fname"/><br/>
+            <input className="login-input" type="password" name="password" value=""/><br/>
             <button className="login-btn" type="text">Login</button>
         </form>
     )
