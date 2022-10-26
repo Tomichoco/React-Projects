@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { regular } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { regular, solid} from '@fortawesome/fontawesome-svg-core/import.macro';
 
 
 export default function Card (props) {
     const [pop, setPop] = useState(false);
     function handleClick(event) {
-        setPop(true)
+        setPop((prevState) => {
+            return !prevState;
+        })
     }
     return (
         <div className="card--div">
@@ -15,7 +17,9 @@ export default function Card (props) {
                     {
 
                         props.item.soldOut ? <span className="badgeText">Soldout</span> : 
-                        <FontAwesomeIcon onClick={handleClick}className="heart-icon" style={{color: pop ? "red" : "pink"}} icon={regular('heart')} />
+                        <div onClick={handleClick}> {pop ? <FontAwesomeIcon className="heart-icon" style={{color: "f20833"}} icon={solid('heart')} /> : <FontAwesomeIcon className="heart-icon" style={{color: "e48899"}} icon={regular('heart')} />}
+                        
+                        </div>
                     }
                         
                 </div>

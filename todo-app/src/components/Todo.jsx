@@ -9,16 +9,20 @@ import Footer from "./Footer.jsx";
 function Todo() {
 
 
-    const [item, setItem] = useState("");
-    const [listValue, setListValue] = useState(" ");
+    const [inputText, setInputText] = useState("");
+    const [list, setList] = useState([]);
 
     function handleChange(event) {
-        const itemValue = event.target.value;
-        setItem(item)
+        const value = event.target.value;
+        setInputText(value)
     }
 
     function handleClick() {
-        setListValue(list.map(() => <li>{listValue}</li>))
+        setList((prevItems) => {
+            return [...prevItems, inputText]
+        })
+
+        setInputText("");
     }
 
     
@@ -28,8 +32,9 @@ function Todo() {
             <div style={boxStyle} className="box-div">
                 <Heading2 text="My Todo List"/>
                 <form className="list-form">
-                <input onChange={handleChange} type="text" name="item-list" value={item}/>
-                <button onClick={handleClick} className="btn" type="submit">Add</button>
+                <input onChange={handleChange} type="text" name="item-list" value={inputText}/>
+                <button onClick={handleClick} className="btn" type="submit"><span>Add</span></button>
+                <ul>{list.map((todoItem) => <li>{todoItem}</li>)}</ul>
                 </form>
             </div>
             <Footer year={new Date().getFullYear()}/>

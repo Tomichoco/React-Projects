@@ -14,8 +14,8 @@ export default function Links(props) {
     return (
         <li className="nav-item">
             <Link onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{color: isHover ? "white" : "black", backgroundColor: isHover ? "black" : "white"}} className="link" to="/">Home</Link>
-            <Link className="link" to="/services">Services</Link>
-            <Link className="link" to="/login">Login</Link>
+            <Link onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{color: isHover ? "white" : "black", backgroundColor: isHover ? "black" : "white"}}  className="link" to="/services">Services</Link>
+            <Link onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{color: isHover ? "white" : "black", backgroundColor: isHover ? "black" : "white"}} className="link" to="/login">Login</Link>
         </li>
     )
 }

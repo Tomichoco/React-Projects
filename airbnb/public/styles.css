@@ -38,6 +38,9 @@ body {
     margin-right: 10%;
     
 }
+.span-h {
+    font-size: 2rem;
+}
 .link {
     margin-right: 30%;
     text-decoration: none;
@@ -49,41 +52,45 @@ body {
 
 .sub-div {
     background-color: transparent;
-    width: 880px;
+    width: 850px;
     height: 400px;
-    position: absolute;
-    top: 20%;
-    left: 18.5%;
-    right: 12%;
-    border-radius: 5px;
-    padding: 40px 70px 0px 70px;
-    z-index: 2;
-    box-shadow: 0 0 30px rgb(71, 74, 82);
+    margin: 10px auto 0px;
+    border-radius: 7px;
+    padding: 40px 30px 0px 50px;
+    box-shadow: 0px 0px 15px #000;
 
 
 }
 
 .home-header {
-    color:rgb(228, 229, 236);
-    margin-top: 5%;
+    color:rgb(243, 231, 207);
+    margin-top: 15px;
     
     
 }
 .header-span {
-    color:rgb(207, 222, 248);
+    color:rgb(240, 213, 156);
     font-style:italic;
 }
 .text {
-    color:rgb(183, 183, 187);
-    font-size: 1.2rem;
+    color:rgb(234, 239, 250);
+    font-size: 1.1rem;
 }
 
 .para-span {
-    color:rgba(2, 24, 34, 0.5)
+    color:#eff1f580;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.made-span {
+    font-size: 2.5rem;
+    color:rgb(234, 239, 250);
+    font-weight: 600;
 }
 
 .home-icons {
-    margin: 20% auto;
+    margin: 70px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -92,11 +99,11 @@ body {
 .icon {
     margin: 65px  5px 5px;
     background-image: var(--bs-gradient);
-    border-radius: 50%;
 }
 
 .globe-icon {
-    background-color: rgb(41, 42, 43);
+    background-color: rgb(0, 15, 31);
+    color: rgb(92, 92, 91);
     width:60px;
     height: 60px;
     padding: 20px;
@@ -105,16 +112,17 @@ body {
 
 .envelope-icon {
     background-color: rgb(71, 62, 2);
-    width:40px;
-    height: 40px;
-    padding: 11px;
+    color:rgb(243, 231, 207);
+    width:60px;
+    height: 60px;
+    padding: 20px;
 }
 
 .twitter-icon {
     background-color: rgb(233, 225, 183);
-    width:25px;
-    height: 25px;
-    padding: 7px;
+    width:60px;
+    height: 60px;
+    padding: 20px;
 }
 
 /* SERVICE STYLING */
@@ -166,7 +174,7 @@ body {
     background-color: #fff;
     width: 18px;
     height: 18px;
-    top: 35px;
+    top: 50px;
     left: 5px;
     font-size: 0.4rem;
     font-weight: bold;
@@ -179,7 +187,7 @@ body {
     background-color: #fff;
     width: 18px;
     height: 18px;
-    top: 35px;
+    top: 50px;
     right: 20px;
     font-size: 0.4rem;
     font-weight: 400;
@@ -194,7 +202,7 @@ body {
 
 /* CARD STYLING */
 .card--div {
-    margin: 50px 5px 10px 5px;
+    margin: 30px 5px 10px 5px;
     display: inline-flex;
     position: relative;
 }
@@ -204,9 +212,10 @@ body {
     color: pink;
     font-size: 1rem;
     position: absolute;
-    /* top: 30px; */
-    right: 10px;
+    top: 0px;
+    right: 0px;
     z-index: 1;
+    padding: 2px;
 
 }
 
@@ -214,7 +223,8 @@ body {
     color: pink;
     font-size: 1.5rem;
     position: absolute;
-    right: 10px;
+    top: 3px;
+    right: 12px;
     z-index: 1;
 }
 
@@ -246,12 +256,12 @@ section .carousel-control-next {
 
 .details--img {
     width: 300px;
-    height: 260px;
+    height: 220px;
     border-radius: 7px;
 
 }
 
-/* LOGIN STYLE */
+/* SIGNUP STYLE */
 
 .login-header {
     font-size: 1.5rem;
@@ -261,22 +271,24 @@ section .carousel-control-next {
     background-image: var(--bs-gradient);
     width: 380px;
     height: 500px;
-    padding: 20px 5px 5px 10px; 
+    padding: 30px 5px 5px 30px; 
     margin: auto;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px #000 ;
 
 }
 
 .login-label {
-    color: blue;
+    color: rgb(1, 1, 41);
     margin-left: 10px;
+    font-size: 1rem;
 }
 
 .login-input {
-    width: 270px;
+    width: 300px;
     height: 35px;
-    border-radius: 5px;
-    margin-left: 10px;
+    border-radius: 3px;
+    margin:0px 0px 10px 10px;
     border: none;
     outline: none;
 }
@@ -284,19 +296,36 @@ section .carousel-control-next {
 .login-btn {
     width: 300px;
     height: 40px;
-    border-radius: 3px;
-    margin: 40px 0px 0px 0px;
+    border-radius: 4px;
+    margin: 100px 0px 0px 10px;
+    border: none;
+    outline: none;
 }
 
-/* SIGNUP PAGE */
+/* LOGIN PAGE */
 .login--form {
     background-color: transparent;
     background-image: var(--bs-gradient);
     width: 380px;
     height: 500px;
-    padding: 20px 5px 5px 10px; 
+    padding: 20px 0px 5px 30px; 
     margin: auto;
     border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+}
+
+.link-class {
+    background-color: rgb(233, 225, 183);
+    width: 100px;
+    color:rgb(71, 62, 2);
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 10px 0px 20px 10px;
+}
+
+.one {
+    color: #f20833;
 }
 
 

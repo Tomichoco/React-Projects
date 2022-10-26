@@ -4,20 +4,25 @@ import React, { useState } from "react";
 export default function Register(props) {
     const [fullName, setFullName] = useState({fName: "", lName: ""});
     function handleChange (event) {
-        const newValue = event.target.value;
-        const newName = event.target.name
+        const {name, value} = event.target;
         setFullName(prevValue => {
-            if (newName === "fName") {
-                return {
-                    fName: newValue,
-                    lName: prevValue.lName
-                } 
-            } else if (newName === "lName") {
-                return {
-                    fName: prevValue.fName,
-                    lName: newValue
+            return {
+                ...prevValue,
+                [name]: value
                 }
-            }
+
+                // ALTERNATIVE
+            // if (name === "fName") {
+            //     return {
+            //         fName: value,
+            //         lName: prevValue.lName
+            //     } 
+            // } else if (name === "lName") {
+            //     return {
+            //         fName: prevValue.fName,
+            //         lName: value
+            //     }
+            // }
         })
         event.preventDefault();
     }
