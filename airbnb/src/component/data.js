@@ -68,4 +68,78 @@ export const data = [
         price: "2m",
         soldOut: false
     },
+
+    {
+        id: 9, 
+        images: ["pic-33.jpg","pic-34.jpg","pic-47.jpg"],
+        title: "A two-storey building with blablabla",
+        location: "Ringroad",
+        price: "2m",
+        soldOut: false
+    },
+
+    {
+        id: 10, 
+        images: ["pic-36.jpg","pic-37.jpg"],
+        title: "A two-storey building with blablabla",
+        location: "Ringroad",
+        price: "2m",
+        soldOut: false
+    },
+
+    {
+        id: 11, 
+        images: ["pic-39.jpg","pic-38.jpg", "pic-40.jpg"],
+        title: "A two-storey building with blablabla",
+        location: "Ringroad",
+        price: "2m",
+        soldOut: false
+    },
+
+    {
+        id: 12, 
+        images: ["pic-41.jpg","pic-42.jpg","pic-43.jpg","pic-44.jpg", "pic-48.jpg"],
+        title: "A two-storey building with blablabla",
+        location: "Ringroad",
+        price: "2m",
+        soldOut: false
+    },
+
+    {
+        id: 13, 
+        images: ["pic-45.jpg","pic-46.jpg","pic-35.jpg"],
+        title: "A two-storey building with blablabla",
+        location: "Ringroad",
+        price: "2m",
+        soldOut: false
+    },
+
+    {
+        id: 14, 
+        images: ["pic-49.jpg","pic-50.jpg","pic-51.jpg","pic-52.jpg"],
+        title: "A two-storey building with blablabla",
+        location: "Ringroad",
+        price: "2m",
+        soldOut: false
+    },
+
+    {
+        id: 15, 
+        images: ["pic-53.jpg","pic-54.jpg"],
+        title: "A two-storey building with blablabla",
+        location: "Ringroad",
+        price: "2m",
+        soldOut: false
+    },
+    
+    {
+        id: 16, 
+        images: ["pic-55.jpg","pic-56.jpg", "pic-57.jpg"],
+        title: "A two-storey building with blablabla",
+        location: "Ringroad",
+        price: "2m",
+        soldOut: false
+    }    
+      
+       
 ]
