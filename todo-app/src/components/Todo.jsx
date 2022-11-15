@@ -6,7 +6,7 @@ import Footer from "./Footer.jsx";
 
 
 
-function Todo() {
+function Todo(props) {
 
 
     const [inputText, setInputText] = useState("");
@@ -17,12 +17,20 @@ function Todo() {
         setInputText(value)
     }
 
-    function handleClick() {
+    function handleClick(event) {
         setList((prevItems) => {
             return [...prevItems, inputText]
         })
 
-        setInputText("");
+         setInputText("");
+         event.preventDefault();
+    }
+
+    function deleteItem(id) {
+        setList(prevItems => {
+            return prevItems.filter((item, index) => index !== id)
+        })
+
     }
 
     
@@ -32,9 +40,9 @@ function Todo() {
             <div style={boxStyle} className="box-div">
                 <Heading2 text="My Todo List"/>
                 <form className="list-form">
-                <input onChange={handleChange} type="text" name="item-list" value={inputText}/>
+                <input onChange={handleChange} type="text" name="input-text" value={inputText}/>
                 <button onClick={handleClick} className="btn" type="submit"><span>Add</span></button>
-                <ul>{list.map((todoItem) => <li>{todoItem}</li>)}</ul>
+                <ul>{list.map((todoItem, index) => <li key={index} onClick={deleteItem}>{todoItem}</li>)}</ul>
                 </form>
             </div>
             <Footer year={new Date().getFullYear()}/>

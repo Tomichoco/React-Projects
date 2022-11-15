@@ -35,7 +35,7 @@ export const data = [
 
     {
         id: 5, 
-        images: ["pic-17.jpg","pic-18.jpg","pic-19.jpg","pic-20.jpg", "pic-105.jpg"],
+        images: ["pic-17.jpg","pic-18.jpg","pic-19.jpg","pic-20.jpg"],
         title: "A two-storey building with blablabla",
         location: "Ringroad",
         price: "2m",

@@ -26,7 +26,7 @@ export default function Card (props) {
             <section className="grid card--section">
 
                 
-                <Carousel slide={false} variant="dark" controls={true}>
+                <Carousel slide={false} variant="dark" controls={true} interval={null}>
                     {
                         props.item.images.map((item,i) => (
                             <Carousel.Item key={i}>
